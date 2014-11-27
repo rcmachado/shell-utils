@@ -51,7 +51,10 @@ Documentation
 
 ### colors.sh
 
-Variables `COLOR_*` with color codes for printing on shell.
+* `print_color "color name" "message"`: print `message` in `color name`
+
+Aditionally to `print_color` function, there are also `COLOR_*`
+variables with color codes for printing on shell.
 
 ### log.sh
 

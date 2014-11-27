@@ -19,3 +19,14 @@ COLOR_LIGHT_RED="1;31"
 COLOR_LIGHT_PURPLE="1;35"
 COLOR_YELLOW="1;33"
 COLOR_WHITE="1;37"
+
+
+print_color()
+{
+    local name=`printf $1 | tr '[:lower:]' '[:upper:]' | tr '[:space:]' _`
+    local message=$2
+    # FIXME: yes, this is ugly :)
+    local color=`eval 'echo $COLOR_'${name}`
+
+    printf "\033[${color}m${message}\033[0m\n"
+}
