@@ -45,7 +45,8 @@ Documentation
 
 ### header.sh
 
-* `print_line N`: print a separator line with `N` chars of lenght
+* `print_separator N C`: print a separator line repeating char `C`
+    `N` times
 * `print_header`: print a header title
 
 ### colors.sh

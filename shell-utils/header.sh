@@ -2,9 +2,10 @@
 # Header functions
 #
 
-print_line()
+print_separator()
 {
     local size=$1
+    local char=$2
     if [ -z $size ]
     then
         size=72
@@ -12,7 +13,7 @@ print_line()
     local sequence=`seq 1 $size`
     for i in $sequence
     do
-        printf "="
+        printf "$char"
     done
 
     printf "\n"
@@ -25,7 +26,7 @@ print_header()
     local sequence=`seq 1 $n`
 
     printf "${message}\n"
-    print_line $n
+    print_separator $n '='
 
     printf "\n"
 }

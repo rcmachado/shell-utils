@@ -13,5 +13,5 @@ log_error "This is an error message"
 
 printf "\n"
 
-print_header "Line with 72 chars"
-print_line 72
+print_header "Custom separator with 72 chars"
+print_separator 72 '-'
