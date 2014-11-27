@@ -19,9 +19,10 @@ _get_color_for_level()
     local level=$1
 
     case $level in
-        INFO) echo $COLOR_BLUE ;;
-        WARNING) echo $COLOR_YELLOW ;;
-        ERROR) echo $COLOR_RED;;
+        INFO) echo "BLUE" ;;
+        WARNING) echo "YELLOW" ;;
+        ERROR) echo "RED";;
+        *) echo "OFF" ;;
     esac
 }
 
@@ -31,7 +32,7 @@ _log_msg()
     local message="$2"
     local color=$(_get_color_for_level $level)
 
-    printf "\033[${color}m[${level}] ${message}\033[0m\n"
+    print_color "$color" "[${level}] ${message}"
 }
 
 log_debug()
