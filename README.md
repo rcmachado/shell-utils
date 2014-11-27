@@ -6,7 +6,9 @@ development more fun and less repetitive.
 
 The main idea is to write small functions that are composable and
 reusable - but have a use on its own. With this approach, we can make
-a small but very efficient 
+a small but very efficient library.
+
+![shell-utils example](/screenshot.png?raw=true "shell-utils screenshot")
 
 Installation
 ------------
