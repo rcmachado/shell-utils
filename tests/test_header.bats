@@ -20,6 +20,6 @@ SHELL_UTILS_DIR="$PWD/shell-utils"
 
 @test "print_header should print message with separator" {
     run print_header 'just a test'
-    [ ${lines[0]} = "just a test" ]
-    [ ${lines[1]} = "===========" ]
+    [ "${lines[0]}" == "just a test" ]
+    [ "${lines[1]}" == "===========" ]
 }
