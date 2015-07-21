@@ -1,6 +1,8 @@
 shell-utils - collection of useful shell helpers
 ================================================
 
+[![Build Status](https://travis-ci.org/rcmachado/shell-utils.svg?branch=master)](https://travis-ci.org/rcmachado/shell-utils)
+
 shell-utils is a collection of functions to make shell script
 development more fun and less repetitive.
 
