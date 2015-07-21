@@ -6,6 +6,10 @@ print_separator()
 {
     local size=$1
     local char=$2
+    if [ -z $char ]
+    then
+        char='-'
+    fi
     if [ -z $size ]
     then
         size=72
